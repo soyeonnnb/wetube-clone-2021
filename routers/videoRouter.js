@@ -1,12 +1,11 @@
 import express from "express";
-import { editProfile } from "../controlloers/userControllers";
+import { videos } from "../controlloers/userControllers";
 import {
   deleteVideo,
   editVideo,
   search,
   upload,
   videoDetail,
-  videos,
 } from "../controlloers/videoControllers";
 import routes from "../routes";
 
