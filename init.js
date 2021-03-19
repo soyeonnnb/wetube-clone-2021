@@ -7,6 +7,6 @@ import "./models/Comment";
 const PORT = 4000;
 
 const handleListening = () =>
-  console.log(`Listeining on :http:/localhost:${PORT}`);
+  console.log(`✅ Listeining on :http:/localhost:${PORT}`);
 
 app.listen(PORT, handleListening);
