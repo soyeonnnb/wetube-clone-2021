@@ -1,0 +1,60 @@
+header {
+  display: flex;
+  width: 100vw;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 30px;
+  position: fixed;
+  background-color: $red;
+  box-sizing: border-box;
+  top: 0;
+  .header__column {
+    display: flex;
+    align-items: center;
+    .icon-link {
+      color: $grey;
+      display: flex;
+      align-items: center;
+    }
+    input {
+      width: 40vw;
+      height: 40px;
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 7px;
+      border: none;
+      box-shadow: 0 0 4px rgb(105, 105, 105);
+      border-radius: 10px;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 5px black;
+      }
+    }
+    span {
+      display: flex;
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 25px;
+      margin-right: 15px;
+      color: $grey;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        margin-left: 10px;
+        a {
+          font-weight: 700;
+          font-size: 15px;
+          color: $grey;
+          &:hover {
+            color: rgb(70, 70, 70);
+          }
+        }
+      }
+    }
+  }
+}

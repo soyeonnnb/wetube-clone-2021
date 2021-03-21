@@ -1,7 +1,8 @@
 header.header
     .header__column
-        a(href=routes.home)
-            i.fab.fa-youtube
+        a.icon-link(href=routes.home)
+            i.fab.fa-youtube.fa-3x
+            span WeTube
     .header__column
         form(action=routes.search, method="get")
             input(type="text", placeholder="Search by term...", name="term")
@@ -9,13 +10,13 @@ header.header
         ul
             if !user.isAuthenticated
                 li 
-                    a(href=routes.join) Join
+                    a(href=routes.join) JOIN
                 li
-                    a(href=routes.login) Log in
+                    a(href=routes.login) LOGIN
             else
                 li
-                    a(href=`/videos${routes.upload}`) Upload
+                    a(href=`/videos${routes.upload}`) UPLOAD
                 li
-                    a(href=routes.userDetail(user.id)) Profile
+                    a(href=routes.userDetail(user.id)) PROFILE
                 li
-                    a(href=routes.logout) Log Out
+                    a(href=routes.logout) LOGOUT

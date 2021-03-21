@@ -23,7 +23,6 @@ export const search = async (req, res) => {
   } catch (error) {
     console.log(error);
   }
-  // eslint-disable-next-line no-undef
   res.render("search", { pageTitle: "Search", searchingBy, videos });
 };
 

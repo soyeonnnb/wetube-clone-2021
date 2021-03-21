@@ -1,0 +1,34 @@
+.video__player {
+  display: flex;
+  justify-content: center;
+  video {
+    width: 80vw;
+  }
+}
+.video__info {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  a {
+    text-align: center;
+    width: 150px;
+    padding: 10px 0;
+    background-color: #3b6ace;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  p {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}

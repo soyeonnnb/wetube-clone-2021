@@ -1,0 +1,28 @@
+.videos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 95vw;
+
+  .videoBlock {
+    width: 350px;
+    height: 270px;
+    margin: 20px;
+    a {
+      video {
+        width: 350px;
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: black;
+        padding-left: 5px;
+      }
+      h6 {
+        color: $black;
+        padding-left: 5px;
+      }
+    }
+  }
+}
