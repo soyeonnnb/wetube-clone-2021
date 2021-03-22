@@ -1,11 +1,11 @@
 import express from "express";
 import {
-  deleteVideo,
-  getEditVideo,
-  postEditVideo,
   getUpload,
   postUpload,
   videoDetail,
+  deleteVideo,
+  getEditVideo,
+  postEditVideo,
 } from "../controlloers/videoControllers";
 import { uploadVideo } from "../middlewares";
 import routes from "../routes";
